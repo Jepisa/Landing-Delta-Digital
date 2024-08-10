@@ -17,12 +17,11 @@
 		border-radius: 0;
 	}
 	.main-hero{
-		background-image: url('../img/hero-r.png');
-		min-height: 800px;
+		background-image: url('../img/hero-mobile.png');
+		min-height: 706px;
 		border-radius: 0;
 	}
 	.main-hero::before{
-		background: #2A0F7F66;
 		z-index: 1;
 	}
 	.hero::before, .hero::after{
