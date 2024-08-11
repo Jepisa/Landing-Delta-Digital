@@ -297,7 +297,7 @@ a{
     mix-blend-mode: plus-lighter;
 }
 .main-hero{
-	background: url('../img/best/nHero.png');
+	background: url('../img/nHero.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-y: 60%;
