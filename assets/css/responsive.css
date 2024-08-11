@@ -17,9 +17,10 @@
 		border-radius: 0;
 	}
 	.main-hero{
-		background-image: url('../img/hero-mobile.png');
+		background-image: url('../img/best/hero-r.png');
 		min-height: 706px;
 		border-radius: 0;
+		background-position-y: bottom;
 	}
 	.main-hero::before{
 		z-index: 1;
@@ -135,6 +136,7 @@
 	}
 	.section-container__content{
 		width: 100%;
+		margin-top: 30px;
 	}
 	.main-about__content{
 		flex-direction: column;
@@ -432,18 +434,30 @@
 	.main-contact::before, .main-contact::after{
 		background: #0A0223;
 	}
+
+	.splide {
+		margin-top: -105px;
+		z-index: 5;
+	}
+
+	.principal {
+		display: block;
+	}
+
+	.principal-desktop {
+		display: none;
+	}
+
+	
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px){
 	.main-hero__content{
-		padding: 40px 20px 200px;
+		padding: 60px 50px 200px ;
 	}
 	.content-hero__form{
 		padding: 25px;
-	}
-	.section-container{
-		margin-top: -100px;
 	}
 	.section-container__subcontent{
 		padding: 0px;
@@ -682,6 +696,10 @@
 	}
 	#stage2.in-action .stage-content__detail, #stage4.in-action .stage-content__detail{
 		left: 12%;
+	}
+
+	.main-hero__content {
+		padding: 60px 50px 200px ;
 	}
 }
 

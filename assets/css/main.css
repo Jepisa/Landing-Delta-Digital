@@ -260,7 +260,6 @@ a{
 }
 .main-content{
 	max-width: 1240px;
-	margin: auto;
 }
 .hero{
 	background: linear-gradient(179.6deg, #FFFFFF -12.64%, rgba(185, 212, 254, 0.69) 100.75%);
@@ -273,16 +272,15 @@ a{
 .hero::before{
 	content: '';
     position: absolute;
-    width: 182px;
-    height: 324px;
-    background-image: url(../img/Ellipse 36.svg);
+    width: 320px;
+    height: 320px;
     background-size: cover;
     background-repeat: no-repeat;
-    right: 0;
+    right: -160px;
     top: 100px;
     z-index: 2;
-    border-radius: 160px 0 0 160px;
-    backdrop-filter: blur(7px);
+    border-radius: 200px;
+    backdrop-filter: blur(13px);
     box-shadow: 1px 1px 0.2px 0px #FFFFFF40 inset;
 }
 .hero::after{
@@ -299,15 +297,16 @@ a{
     mix-blend-mode: plus-lighter;
 }
 .main-hero{
-	background: url('../img/nHero.png');
+	background: url('../img/best/nHero.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position-y: 60%;
 	width: 100%;
 	height: 100%;
 	position: relative;
 	border-radius: 20px 20px 88px 88px ;
 	overflow: hidden;
+	min-height: 754px;
 }
 .main-hero::before{
 	content: '';
@@ -332,7 +331,7 @@ a{
 	left: 0;
 }
 .main-hero__content{
-	padding: 60px 0 210px;
+	padding: 60px 60px 210px;
 	display: flex;
 	position: relative;
 	z-index: 2;
@@ -471,7 +470,7 @@ a{
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: #b9bfcf;
+	background: #b9c9db;
 	transition: .3s ease-in-out;
 	border-radius: 10px;
 	backdrop-filter: blur(5px);
@@ -530,6 +529,7 @@ a{
 .section-container__content{
 	width: calc(100% - 75px);
 	margin-left: auto;
+	margin-top: 100px;
 }
 .container-sidebar__logo{
 	padding: 0 0 20px;
@@ -1718,3 +1718,35 @@ a{
 
 
 
+
+
+
+
+.splide {
+	margin-top: -179px;
+	z-index: 5;
+}
+
+.splide__slide {
+	margin: auto 2rem auto 0 !important;
+}
+
+.splide .splide__track {
+	padding-bottom: 10px;
+}
+
+.splide__slide img {
+	image-rendering: auto; /* default */
+	image-rendering: crisp-edges; /* for nearest-neighbor scaling */
+	image-rendering: pixelated; /* for pixelated images */
+	border-radius: 15px;
+	max-height: 303px;
+}
+
+.principal {
+	display: none;
+}
+
+.principal-desktop {
+	width: 80vw;
+}
